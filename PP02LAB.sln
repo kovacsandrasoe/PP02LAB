@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37614.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PP02LAB.Server", "PP02LAB.Server\PP02LAB.Server.csproj", "{4F54DBD8-9E68-4040-8592-7689CB95CC37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PP02LAB.Client", "PP02LAB.Client\PP02LAB.Client.csproj", "{F8E6447F-8D1C-4EBD-8FD8-E2D06231CFE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F54DBD8-9E68-4040-8592-7689CB95CC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F54DBD8-9E68-4040-8592-7689CB95CC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F54DBD8-9E68-4040-8592-7689CB95CC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F54DBD8-9E68-4040-8592-7689CB95CC37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E6447F-8D1C-4EBD-8FD8-E2D06231CFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E6447F-8D1C-4EBD-8FD8-E2D06231CFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E6447F-8D1C-4EBD-8FD8-E2D06231CFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E6447F-8D1C-4EBD-8FD8-E2D06231CFE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4BA87BA-5753-4602-B612-96CCB5B2DFFC}
+	EndGlobalSection
+EndGlobal

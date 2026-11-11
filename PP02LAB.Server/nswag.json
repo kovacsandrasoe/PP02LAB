@@ -1,0 +1,23 @@
+﻿{
+  "runtime": "Net80",
+  "documentGenerator": {
+    "aspNetCoreToOpenApi": {
+      "project": "PP02LAB.Server.csproj",
+      "configuration": "Debug",
+      "noBuild": true
+    }
+  },
+  "codeGenerators": {
+    "openApiToCSharpClient": {
+      "className": "Client",
+      "namespace": "PP02LAB.Client",
+      "output": "../PP02LAB.Client/Proxy.cs",
+      "generateClientInterfaces": true,
+      "injectHttpClient": true,
+      "disposeHttpClient": false,
+      "generateExceptionClasses": true,
+      "generateSyncMethods": true,
+      "jsonLibrary": "SystemTextJson"
+    }
+  }
+}
