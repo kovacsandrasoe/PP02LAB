@@ -7,7 +7,15 @@ namespace PP02LAB.Client
         static void Main(string[] args)
         {
             var client = new Client("http://localhost:5080", new HttpClient());
-            AvgRatingByYear(client, 2000);
+            for (int i = 1972; i <= 2024; i++)
+            {
+                //outer variable trap
+                int k = i;
+                Task.Run(() => AvgRatingByYear(client, k));
+            }
+
+            Console.ReadLine();
+
 
         }
 
