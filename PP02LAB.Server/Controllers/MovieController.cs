@@ -119,34 +119,20 @@ namespace PP02LAB.Server.Controllers
         }
 
         [HttpGet("page/{page}")]
-        public ActionResult<List<Movie>> GetByPage(int page)
+        public List<Movie> GetByPage(int page)
         {
-            if (page * 10 > movies.Count())
-            {
-                return BadRequest(new
-                {
-                    Error = "Invalid page size"
-                });
-            }
             var delayedTask = Task.Delay(r.Next(100, 700));
             delayedTask.Wait();
-            return Ok(movies.Skip(page * 10).Take(10).ToList());
+            return movies.Skip(page * 10).Take(10).ToList();
         }
 
         [HttpGet("year/{year}")]
-        public ActionResult<List<Movie>> GetByYear(int year)
+        public List<Movie> GetByYear(int year)
         {
             //1972-2024
-            if (year < 1972 || year > 2024)
-            {
-                return BadRequest(new
-                {
-                    Error = "The database only contains movies released between 1972 and 2024."
-                });
-            }
             var delayedTask = Task.Delay(r.Next(10, 50));
             delayedTask.Wait();
-            return Ok(movies.Where(t => t.Release.Year == year));
+            return movies.Where(t => t.Release.Year == year).ToList(); ;
         }
     }
 }
